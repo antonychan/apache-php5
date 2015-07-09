@@ -13,4 +13,4 @@ RUN a2dismod mpm_event && a2enmod mpm_prefork
 RUN mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.dist && rm /etc/apache2/conf-enabled/* /etc/apache2/sites-enabled/*
 COPY apache2.conf /etc/apache2/apache2.conf
 
-RUN apt-get -y -qq install php5 libapache2-mod-php5 php5-mcrypt
+RUN apt-get -y -qq install php5 libapache2-mod-php5 php5-mcrypt php5-mysql
