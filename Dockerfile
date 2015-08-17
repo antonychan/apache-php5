@@ -14,7 +14,7 @@ RUN mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.dist && rm /etc/apach
 
 COPY apache2.conf /etc/apache2/apache2.conf
 
-RUN apt-get -y -qq install php5 libapache2-mod-php5 php5-mcrypt php5-mysql
+RUN apt-get -y -qq install php5 libapache2-mod-php5 php5-mcrypt php5-mysql php5-curl
 
 RUN curl -sS https://getcomposer.org/installer | php
 
